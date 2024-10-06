@@ -5,18 +5,18 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #BCCEF8;
+    background-color: #ad1b0d;
   }
   .wrapper {
     box-sizing: content-box;
     width: 26.87em;
     padding: 2.5em 3em;
-    background-color: #ededed;
+    background-color: #ad1b0d;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    border-radius: 0.6em;
+    border-radius: 1.6em;
     box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
   }
   .game-container {
@@ -35,8 +35,9 @@
   .card-container {
     position: relative;
     width: 6.25em;
-    height: 6.25em;
+    height: 7.25em;
     cursor: pointer;
+    box-shadow: -14px 20px rgb(0 0 0 / 0.2);
   }
   .card-before,
   .card-after {
@@ -47,13 +48,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 4px solid #000;
+    border: 4px solid #000000;
     transition: transform 0.7s ease-out;
     backface-visibility: hidden;
-    color: #ededed;
+    color: #ffffff;
+    
   }
   .card-before {
-    background-color: #ededed;
+    background-color: #ffffff;
     font-size: 2.8em;
     font-weight: 600;
   }
@@ -68,14 +70,14 @@
     transform: rotateY(0deg);
   }
   .controls-container {
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #BCCEF8;
+    background-color: #ffffff;
     top: 0;
   }
   button {
@@ -115,4 +117,17 @@
     margin: 0.6em 0 1em 0;
     color: #ffffff;
     text-shadow: 2px 5px #00000020;
+  }
+  
+  @media screen and (max-width:1080) and (max-height:1920)
+  {
+   .body{
+    max-width: 100%;
+    height: auto;
+   }
+   
+  }
+
+  #logo{
+    width: 100px;
   }
